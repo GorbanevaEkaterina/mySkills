@@ -47,10 +47,22 @@ body {
     margin-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+    .header {
+        width: 768px;
+    }
+}
+
 .header__nav {
     display: flex;
     justify-content: space-between;
     width: 1200px;
+}
+
+@media (max-width: 768px) {
+    .header__nav {
+        width: 700px;
+    }
 }
 
 .logo__link {
@@ -70,6 +82,27 @@ body {
     display: flex;
 }
 
+@media (max-width: 768px) {
+    .nav__list {
+        display: flex;
+        gap: 30px;
+        position: absolute;
+        transition: 0.8s;
+        transform: translateX(100%);
+        z-index: 5;
+        top: 100px;
+        right: -332px;
+        display: flex;
+        flex-direction: column;
+        background-color: #0C0C0E;
+        align-items: center;
+        width: 332px;
+        height: 480px;
+        gap: 30px;
+    }
+}
+
+
 .list__item {
     display: flex;
     color: #fff;
@@ -87,6 +120,82 @@ body {
     text-decoration: none;
     color: #fff;
 }
+
+button.burger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    button.burger {
+        background-color: #0a0b0c;
+        transition: 0.8s;
+        animation-duration: 2s;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 40px;
+        width: 45px;
+        height: 20px;
+    }
+
+    button.burger.open {
+        z-index: 15;
+        position: absolute;
+        transition: 0.8s;
+        animation-duration: 2s;
+        right: 20px;
+    }
+
+    .burger__line1 {
+        width: 45px;
+        height: 2px;
+        background: #FFF;
+        transition: 0.8s;
+        animation-duration: 2s;
+
+    }
+
+    .burger__line1.open {
+        width: 32px;
+        height: 2px;
+        transform: translateY(9px) rotate(45deg);
+        background: #FFF;
+        transition: 0.8s;
+        animation-duration: 2s;
+    }
+
+    .burger__line2 {
+        width: 45px;
+        height: 2px;
+        background: #FFF;
+        transition: 0.8s;
+        animation-duration: 2s;
+    }
+
+    .burger__line2.open {
+        opacity: 0;
+    }
+
+    .burger__line3 {
+        width: 45px;
+        height: 2px;
+        background: #FFF;
+        transition: 0.8s;
+        animation-duration: 2s;
+
+    }
+
+    .burger__line3.open {
+        transform: translateY(-9px) rotate(-45deg);
+        width: 32px;
+        height: 2px;
+        background: #FFF;
+        transition: 0.8s;
+        animation-duration: 2s;
+    }
+}
+
 
 .main {
     display: flex;
