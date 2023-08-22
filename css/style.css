@@ -44,6 +44,7 @@ body {
     height: 90px;
     width: 1440px;
     justify-content: space-around;
+    margin-bottom: 40px;
 }
 
 .header__nav {
@@ -84,5 +85,120 @@ body {
     justify-content: center;
     width: 100px;
     text-decoration: none;
+    color: #fff;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    width: 1440px;
+}
+
+.main__text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #fff;
+}
+
+.content__img {
+    display: flex;
+    transition: 0.5s;
+    width: 600px;
+    height: 600px;
+}
+
+.content__img.active {
+    display: none;
+    transition: 0.5s;
+    width: 600px;
+    height: 600px;
+}
+
+.text__img_preview {
+    display: flex;
+    transition: 0.5s;
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+}
+
+.text__img_preview:hover {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.text__img_preview.active {
+    display: none;
+    transition: 0.5s;
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+}
+
+.content__img_my {
+    display: none;
+    transition: 0.5s;
+    width: 600px;
+    height: 600px;
+}
+
+.content__img_my.active {
+    display: block;
+    transition: 0.5s;
+    width: 600px;
+    height: 600px;
+}
+
+.text__img_my {
+    display: flex;
+    transition: 0.5s;
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+}
+
+.text__img_my:hover {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 1440px;
+    height: 90px;
+}
+
+.github__link {
+    display: flex;
+    width: 250px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #fff;
+}
+
+.year {
+    display: flex;
+    width: 250px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
     color: #fff;
 }
