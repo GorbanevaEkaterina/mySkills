@@ -37,11 +37,12 @@ body {
     -moz-overflow-x: hidden;
     -o-overflow-x: hidden;
     -ms-overflow-x: hidden;
-    background: #275117;
+    background: #38e8bc;
 }
 
 .header {
     display: flex;
+    position: fixed;
     height: 90px;
     width: 1440px;
     justify-content: space-around;
@@ -102,7 +103,7 @@ body {
         right: -332px;
         display: flex;
         flex-direction: column;
-        background-color: #275117;
+        background-color: #d338e8;
         align-items: center;
         width: 332px;
         height: 480px;
@@ -119,7 +120,7 @@ body {
     right: 0px;
     display: flex;
     flex-direction: column;
-    background-color: #275117;
+    background-color: #d338e8;
     align-items: center;
     width: 350px;
     height: 300px;
@@ -158,7 +159,7 @@ button.burger {
 
 @media (max-width: 768px) {
     button.burger {
-        background-color: #275117;
+        background-color: #d338e8;
         transition: 0.8s;
         animation-duration: 2s;
         border: none;
@@ -243,6 +244,7 @@ button.burger {
     font-weight: 600;
     line-height: normal;
     margin-bottom: 40px;
+    margin-top: 90px;
 }
 
 .contact__list {
@@ -250,10 +252,7 @@ button.burger {
     flex-direction: column;
     justify-content: space-around;
     height: 300px;
-    /* background-image: url(../img/png/leftColum.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; */
+
 }
 
 .contact__list_item {

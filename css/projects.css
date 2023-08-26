@@ -37,7 +37,7 @@ body {
     -moz-overflow-x: hidden;
     -o-overflow-x: hidden;
     -ms-overflow-x: hidden;
-    background: #275117;
+    background: #d4e70b;
 }
 
 
@@ -103,7 +103,8 @@ body {
         right: -332px;
         display: flex;
         flex-direction: column;
-        background-color: #0a0b0c;
+        background-color: #d4e70b;
+        ;
         align-items: center;
         width: 332px;
         height: 480px;
@@ -120,7 +121,8 @@ body {
     right: 0px;
     display: flex;
     flex-direction: column;
-    background-color: #275117;
+    background-color: #d4e70b;
+    ;
     align-items: center;
     width: 350px;
     height: 300px;
@@ -159,7 +161,8 @@ button.burger {
 
 @media (max-width: 768px) {
     button.burger {
-        background-color: #275117;
+        background-color: #d4e70b;
+        ;
         transition: 0.8s;
         animation-duration: 2s;
         border: none;
