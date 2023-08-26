@@ -29,18 +29,7 @@ burgermenu.addEventListener('click', (e) => {
     burgerline3.classList.toggle('open');
     headermenu.classList.toggle('open');
     headerlist.classList.toggle('open');
-    link.classList.toggle('open');
 
     e.stopPropagation();
 });
-link.addEventListener('click', (e) => {
-    burgermenu.classList.toggle('open');
-    burgerline1.classList.toggle('open');
-    burgerline2.classList.toggle('open');
-    burgerline3.classList.toggle('open');
-    headermenu.classList.toggle('open');
-    headerlist.classList.toggle('open');
-    link.classList.toggle('open');
 
-    e.stopPropagation();
-});

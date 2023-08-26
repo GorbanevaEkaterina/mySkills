@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="../css/contact.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/jpg/icon.jpg">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a class="logo__link" href="#"><img src="../img/svg/logo.svg" alt="snail programmer">Web-Snail</a>
+            <ul class="nav__list">
+                <li class="list__item"><a class="nav__item_link" href="../html/index.html">Home</a></li>
+                <li class="list__item"><a class="nav__item_link" href="../html/projects.html">Projects</a></li>
+                <li class="list__item"><a class="nav__item_link" href="../html/about.html">About</a></li>
+                <li class="list__item"><a class="nav__item_link" href="../html/contact.html">Contact</a></li>
+            </ul>
+            <button class="burger">
+                <span class="burger__line1"></span>
+                <span class="burger__line2"></span>
+                <span class="burger__line3"></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="contact__section">
+            <h2 class="contact__header">My contacts.</h2>
+            <ul class="contact__list">
+                <li class="contact__list_item">Location:<a class="location__link" target="_blank"
+                        href="https://www.google.com/maps/place/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0,
+                        +%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB./
+                        @53.2604535,49.868446,10z/data=!4m15!1m8!3m7!1s0x416618e22bd879d3:0xba95cda9bb3a030b!
+                        2z0KHQsNC80LDRgNCwLCDQodCw0LzQsNGA0YHQutCw0Y8g0L7QsdC7Lg!3b1!8m2!3d53.203772!4d50.
+                        1606382!16zL20vMGpsc3E!3m5!1s0x416618e22bd879d3:0xba95cda9bb3a030b!8m2!3d53.203772!4d50.1606382!16zL20vMGpsc3E?entry=ttu">Russia,
+                        Samara</a></li>
+                <li class="contact__list_item">Email:<a class="mail__link" href="mailto:lwohviem@gmail.com">
+                        lwohviem@gmail.com</a></li>
+                <li class="contact__list_item"> Github: <a class="contact__githab"
+                        href="https://github.com/GorbanevaEkaterina" target="_blank">GorbanevaEkaterina</a></li>
+                <li class="contact__list_item"> Telegram:<a class="contact__telegram" href="https://web.telegram.org/k/"
+                        target="_blank">@GorbanevaEkaterina</a> </li>
+                <li class="contact__list_item"> Discord:<a class="contact__discord"
+                        href="https://discord.com/channels/@me" target="_blank"> GorbanevaEkaterina#5853</a></li>
+            </ul>
+        </section>
+
+        <section class="slider__section">
+            <h1 class="slider__header">This is my hometown.</h1>
+            <figure class="figure__audio">
+                <figcaption class="figure__header">Listen to the Samara-gorodok:</figcaption>
+                <audio class="figure__play" controls
+                    src="../media/Lyudmila_Nikolaeva_-_Akh_Samara-gorodok_(musmore.com).mp3">
+                    <a href="../media/Lyudmila_Nikolaeva_-_Akh_Samara-gorodok_(musmore.com).mp3"> Download audio </a>
+                </audio>
+            </figure>
+            <div class="text__header">The city is located on the left bank of the Saratov reservoir opposite the
+                <a class="text__header_link" href="https://npsamluka.ru/">Samarskaya Luka</a>,
+                at the confluence of the rivers Samara (hence the name of the city) and Soka. For the
+                first time, the name of the Samara river is mentioned in the notes of the secretary of the Arab embassy
+                and traveler Ahmed ibn Fadlan (921) as "Samur".
+            </div>
+            <div class="slider__wrap">
+                <div id="slider__viewport" class="slider__viewport">
+                    <div class="slider">
+                        <div class="slide"><img src="../img/jpg/samara.jpg" class="slide__img_size" alt="1"></div>
+                        <div class="slide"><img src="../img/jpg/koleso.jpg" class="slide__img_size" alt="2"></div>
+                        <div class="slide"><img src="../img/jpg/stela.jpg" class="slide__img_size" alt="3"></div>
+                        <div class="slide"><img src="../img/jpg/train.jpg" class="slide__img_size" alt="4"></div>
+                        <div class="slide"><img src="../img/jpg/mechet.jpg" class="slide__img_size" alt="5"></div>
+                    </div>
+                </div>
+                <div class="slider__pagination">
+                    <div id="viewSlider">
+                        <div class="viewSlide"></div>
+                        <div class="viewSlide"></div>
+                        <div class="viewSlide"></div>
+                        <div class="viewSlide"></div>
+                        <div class="viewSlide"></div>
+                    </div>
+                </div>
+                <div class="slider__control">
+                    <button class="slider__control-button slider__control-prev" id="slider__control-prev">&lt;</button>
+                    <button class="slider__control-button slider__control-next" id="slider__control-next">&gt;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <a class="github__link" href="https://github.com/GorbanevaEkaterina" target="_blank">Gorbaneva Ekaterina</a>
+        <div class="year">2023 year</div>
+    </footer>
+    <script src="../js/contact.js"></script>
+</body>
+
+</html>
