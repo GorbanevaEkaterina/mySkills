@@ -17,8 +17,4 @@ burgermenu.addEventListener('click', (e) => {
     e.stopPropagation();
 });
 
-// var swiper = new Swiper(".mySwiper", {
-//     pagination: {
-//         el: ".swiper-pagination",
-//     },
-// });
+
