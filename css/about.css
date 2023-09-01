@@ -37,8 +37,7 @@ body {
     -moz-overflow-x: hidden;
     -o-overflow-x: hidden;
     -ms-overflow-x: hidden;
-    background: rgba(6, 134, 60, 0.7);
-    ;
+    background: rgb(27, 189, 119);
     position: relative;
 }
 
@@ -105,8 +104,7 @@ body {
         right: -332px;
         display: flex;
         flex-direction: column;
-        background-color: rgba(6, 134, 60, 0.7);
-        ;
+        background: rgb(27, 189, 119);
         align-items: center;
         width: 332px;
         height: 480px;
@@ -123,8 +121,7 @@ body {
     right: 0px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(6, 134, 60, 0.7);
-    ;
+    background: rgb(27, 189, 119);
     align-items: center;
     width: 350px;
     height: 300px;
@@ -159,11 +156,11 @@ body {
 
 button.burger {
     display: none;
+    background: rgb(27, 189, 119);
 }
 
 @media (max-width: 768px) {
     button.burger {
-        background-color: rgba(6, 134, 60, 0.7);
         transition: 0.8s;
         animation-duration: 2s;
         border: none;
@@ -259,7 +256,7 @@ button.burger {
     align-self: center;
     text-align: center;
     color: #fff;
-    background-color: rgb(6, 134, 60);
+    background-color: rgba(6, 134, 60, 0.7);
     opacity: 0.7;
     border-radius: 30px;
     width: 1000px;
@@ -279,7 +276,7 @@ button.burger {
     font-size: 26px;
 }
 
-/* swiper-container {
+swiper-container {
     width: 100%;
     height: 100%;
 }
@@ -298,10 +295,12 @@ swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-} */
+}
 
 .my__scils {
     display: flex;
+    height: 400px;
+    margin-left: 20px;
     flex-direction: column;
     justify-content: space-around;
     color: #fff;

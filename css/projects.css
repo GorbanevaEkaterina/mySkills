@@ -103,7 +103,7 @@ body {
         right: -332px;
         display: flex;
         flex-direction: column;
-        background-color: #d4e70b;
+        background-color: #0b623f;
         ;
         align-items: center;
         width: 332px;
@@ -121,7 +121,7 @@ body {
     right: 0px;
     display: flex;
     flex-direction: column;
-    background-color: #d4e70b;
+    background-color: #0b623f;
     ;
     align-items: center;
     width: 350px;
@@ -161,8 +161,7 @@ button.burger {
 
 @media (max-width: 768px) {
     button.burger {
-        background-color: #d4e70b;
-        ;
+        background-color: #0b623f;
         transition: 0.8s;
         animation-duration: 2s;
         border: none;
