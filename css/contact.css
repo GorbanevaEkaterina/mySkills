@@ -16,6 +16,7 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+
 }
 
 p {
@@ -40,9 +41,20 @@ body {
     background: #38e8bc;
 }
 
+@media (max-width: 768px) {
+    body {
+        width: 768px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        width: 320px;
+    }
+}
+
 .header {
     display: flex;
-    position: fixed;
     height: 90px;
     width: 1440px;
     justify-content: space-around;
@@ -55,6 +67,12 @@ body {
     }
 }
 
+@media (max-width: 320px) {
+    .header {
+        width: 320px;
+    }
+}
+
 .header__nav {
     display: flex;
     justify-content: space-between;
@@ -64,6 +82,12 @@ body {
 @media (max-width: 768px) {
     .header__nav {
         width: 720px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header__nav {
+        width: 280px;
     }
 }
 
@@ -93,7 +117,7 @@ body {
 
 @media (max-width: 768px) {
     .nav__list {
-        display: flex;
+        display: none;
         gap: 30px;
         position: absolute;
         transition: 0.8s;
@@ -101,13 +125,29 @@ body {
         z-index: 5;
         top: 100px;
         right: -332px;
-        display: flex;
         flex-direction: column;
         background-color: #38e8bc;
         align-items: center;
         width: 332px;
         height: 480px;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav__list {
+        display: none;
         gap: 30px;
+        position: absolute;
+        transition: 0.8s;
+        transform: translateX(100%);
+        z-index: 5;
+        top: 100px;
+        right: -332px;
+        flex-direction: column;
+        background-color: #38e8bc;
+        align-items: center;
+        width: 332px;
+        height: 480px;
     }
 }
 
@@ -244,7 +284,7 @@ button.burger {
     font-weight: 600;
     line-height: normal;
     margin-bottom: 40px;
-    margin-top: 90px;
+    text-decoration: underline;
 }
 
 .contact__list {
@@ -264,6 +304,13 @@ button.burger {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+@media (max-width: 320px) {
+    .contact__list_item {
+        width: 280px;
+        font-size: 18px;
+    }
 }
 
 .location__link {
@@ -345,6 +392,7 @@ button.burger {
     font-weight: 600;
     line-height: normal;
     margin-bottom: 40px;
+    text-decoration: underline;
 }
 
 .figure__audio {
@@ -362,9 +410,24 @@ button.burger {
     line-height: normal;
 }
 
+@media (max-width: 320px) {
+    .figure__header {
+        width: 280px;
+        text-align: center;
+
+    }
+}
+
 .figure__play {
     width: 600px;
     margin-bottom: 20px;
+}
+
+@media (max-width: 320px) {
+    .figure__play {
+        width: 280px;
+
+    }
 }
 
 .text__header {
@@ -384,6 +447,15 @@ button.burger {
     .text__header {
         width: 700px;
         height: 120px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .text__header {
+        width: 280px;
+        height: 240px;
+        font-size: 18px;
         text-align: center;
     }
 }
@@ -547,6 +619,14 @@ button.burger {
     }
 }
 
+@media (max-width: 320px) {
+    .footer {
+        transition: 0.5s;
+        width: 320px;
+
+    }
+}
+
 .github__link {
     display: flex;
     width: 250px;
@@ -559,6 +639,14 @@ button.burger {
     font-weight: 600;
     line-height: normal;
     color: #fff;
+}
+
+@media (max-width: 320px) {
+    .github__link {
+        width: 200px;
+        font-size: 20px;
+
+    }
 }
 
 .github__link:hover {
@@ -584,6 +672,14 @@ button.burger {
 @media (max-width: 768px) {
     .year {
         width: 120px;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .year {
+        width: 90px;
+        font-size: 20px;
 
     }
 }

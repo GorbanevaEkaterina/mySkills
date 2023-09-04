@@ -16,6 +16,7 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+
 }
 
 p {
@@ -38,7 +39,18 @@ body {
     -o-overflow-x: hidden;
     -ms-overflow-x: hidden;
     background: rgb(27, 189, 119);
-    position: relative;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 768px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        width: 320px;
+    }
 }
 
 
@@ -56,6 +68,12 @@ body {
     }
 }
 
+@media (max-width: 320px) {
+    .header {
+        width: 320px;
+    }
+}
+
 .header__nav {
     display: flex;
     justify-content: space-between;
@@ -65,6 +83,12 @@ body {
 @media (max-width: 768px) {
     .header__nav {
         width: 720px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header__nav {
+        width: 280px;
     }
 }
 
@@ -249,6 +273,14 @@ button.burger {
     }
 }
 
+@media (max-width: 320px) {
+    .main {
+        transition: 0.5s;
+        width: 320px;
+
+    }
+}
+
 .summary {
     display: flex;
     justify-content: space-around;
@@ -268,6 +300,14 @@ button.burger {
     .summary {
         transition: 0.5s;
         width: 500px;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .summary {
+        transition: 0.5s;
+        width: 260px;
 
     }
 }
@@ -310,6 +350,13 @@ swiper-slide img {
     line-height: normal;
 }
 
+@media (max-width: 320px) {
+    .my__scils {
+        width: 280px;
+    }
+
+}
+
 .scils__header {
     display: flex;
     justify-content: space-around;
@@ -318,7 +365,9 @@ swiper-slide img {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin-top: 20px;
     margin-bottom: 20px;
+    text-decoration: underline;
 
 }
 
@@ -338,6 +387,14 @@ swiper-slide img {
     }
 }
 
+@media (max-width: 320px) {
+    .footer {
+        transition: 0.5s;
+        width: 320px;
+
+    }
+}
+
 .github__link {
     display: flex;
     width: 250px;
@@ -350,6 +407,14 @@ swiper-slide img {
     font-weight: 600;
     line-height: normal;
     color: #fff;
+}
+
+@media (max-width: 320px) {
+    .github__link {
+        width: 200px;
+        font-size: 20px;
+
+    }
 }
 
 .github__link:hover {
@@ -375,6 +440,14 @@ swiper-slide img {
 @media (max-width: 768px) {
     .year {
         width: 120px;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .year {
+        width: 90px;
+        font-size: 20px;
 
     }
 }
