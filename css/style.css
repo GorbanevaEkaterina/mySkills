@@ -16,6 +16,7 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+
 }
 
 p {
@@ -118,7 +119,8 @@ body {
 
 @media (max-width: 768px) {
     .nav__list {
-        display: flex;
+        display: none;
+        /* display: flex;
         gap: 30px;
         position: absolute;
         transition: 0.8s;
@@ -132,7 +134,7 @@ body {
         align-items: center;
         width: 332px;
         height: 480px;
-        gap: 30px;
+        gap: 30px; */
     }
 }
 
@@ -175,6 +177,24 @@ body {
     width: 100px;
     text-decoration: none;
     color: #fff;
+    transition: 0.8s;
+}
+
+@media (max-width: 768px) {
+    .nav__item_link {
+        width: 0px;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav__item_link {
+        width: 0px;
+    }
+}
+
+.nav__item_link.open {
+    width: 100px;
+    transition: 0.8s;
 }
 
 .nav__item_link:hover {
@@ -292,6 +312,7 @@ button.burger {
     font-weight: 600;
     line-height: normal;
     color: #fff;
+    margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -305,6 +326,7 @@ button.burger {
 @media (max-width: 320px) {
     .main__text {
         width: 280px;
+        font-size: 22px;
     }
 }
 
@@ -499,7 +521,9 @@ button.burger {
 
 @media (max-width: 320px) {
     .footer {
+        transition: 0.5s;
         width: 320px;
+
     }
 }
 
@@ -515,6 +539,14 @@ button.burger {
     font-weight: 600;
     line-height: normal;
     color: #fff;
+}
+
+@media (max-width: 320px) {
+    .github__link {
+        width: 200px;
+        font-size: 20px;
+
+    }
 }
 
 .github__link:hover {
@@ -540,6 +572,14 @@ button.burger {
 @media (max-width: 768px) {
     .year {
         width: 120px;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .year {
+        width: 90px;
+        font-size: 20px;
 
     }
 }

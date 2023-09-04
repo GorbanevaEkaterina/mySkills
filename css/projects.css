@@ -40,6 +40,18 @@ body {
     background: #0b623f;
 }
 
+@media (max-width: 768px) {
+    body {
+        width: 768px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        width: 320px;
+    }
+}
+
 
 .header {
     display: flex;
@@ -55,6 +67,12 @@ body {
     }
 }
 
+@media (max-width: 320px) {
+    .header {
+        width: 320px;
+    }
+}
+
 .header__nav {
     display: flex;
     justify-content: space-between;
@@ -64,6 +82,12 @@ body {
 @media (max-width: 768px) {
     .header__nav {
         width: 720px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header__nav {
+        width: 280px;
     }
 }
 
@@ -89,11 +113,12 @@ body {
 
 .nav__list {
     display: flex;
+    transition: 0.8s;
 }
 
 @media (max-width: 768px) {
     .nav__list {
-        display: flex;
+        display: none;
         gap: 30px;
         position: absolute;
         transition: 0.8s;
@@ -101,14 +126,11 @@ body {
         z-index: 5;
         top: 100px;
         right: -332px;
-        display: flex;
         flex-direction: column;
         background-color: #0b623f;
-        ;
         align-items: center;
         width: 332px;
         height: 480px;
-        gap: 30px;
     }
 }
 
@@ -122,7 +144,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #0b623f;
-    ;
     align-items: center;
     width: 350px;
     height: 300px;
@@ -244,9 +265,16 @@ button.burger {
     }
 }
 
+@media (max-width: 320px) {
+    .main {
+        width: 320px;
+    }
+}
+
 .project__header {
     display: flex;
     justify-content: space-around;
+    text-decoration: underline;
     color: #fff;
     font-size: 32px;
     font-style: normal;
@@ -266,6 +294,17 @@ button.burger {
     .project__photo {
         width: 680px;
         flex-direction: column;
+        gap: 30px;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .project__photo {
+        width: 280px;
+        flex-direction: column;
+        gap: 30px;
+
 
     }
 }
@@ -273,6 +312,14 @@ button.burger {
 .project__img {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
+}
+
+@media (max-width: 320px) {
+    .project__img {
+        transition: 0.5s;
+        width: 200px;
+
+    }
 }
 
 .project__img:hover {
@@ -296,6 +343,14 @@ button.burger {
     }
 }
 
+@media (max-width: 320px) {
+    .footer {
+        transition: 0.5s;
+        width: 320px;
+
+    }
+}
+
 .github__link {
     display: flex;
     width: 250px;
@@ -308,6 +363,14 @@ button.burger {
     font-weight: 600;
     line-height: normal;
     color: #fff;
+}
+
+@media (max-width: 320px) {
+    .github__link {
+        width: 200px;
+        font-size: 20px;
+
+    }
 }
 
 .github__link:hover {
@@ -333,6 +396,14 @@ button.burger {
 @media (max-width: 768px) {
     .year {
         width: 120px;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .year {
+        width: 90px;
+        font-size: 20px;
 
     }
 }
